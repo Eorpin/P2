@@ -1,11 +1,24 @@
 function allSubStrings1(s){
 //s = String(s); 
 var result = "";
-for (var i=0; i<s.length; i++){
-	for(var k=1; k<(s.length+1); k++)
-result= result + s.substr(i,k)+", ";
-//console.log(result);
+var length = s.length;
+var str='';
+for (var i=0; i<length; i++){
+	//console.log(result);
+	for(var k=1; k<(length-i); k++)
+		var sub = s.substring(i,(k+1))
+
+//str += sub + ", "; 
+console.log(result);
 }
-return result;
+//return result;
 }
 
+
+str += sub + ", "; 
+//console.log(result);
+}
+//return result;
+}
+
+allSubStrings1("cat");
